@@ -1,6 +1,6 @@
 import gqlServer from '#root/server';
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 const server = await gqlServer();
 
 server.listen({ port: Number(port) }, () => {
