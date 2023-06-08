@@ -34,7 +34,7 @@
     "start": "node --enable-source-maps api/index.js",
     "build": "tsup --onSuccess \"node scripts/on-build-success.mjs\"",
     "watch": "tsup --watch --onSuccess \"node scripts/on-build-success.mjs\"",
-    "dev": "yarn build && yarn start",
+    "dev": "npm run build && npm run start",
     "clean": "node scripts/clean.mjs",
     "bump": "cliff-jumper",
     "check-update": "cliff-jumper --dry-run",
